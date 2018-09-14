@@ -13,6 +13,7 @@ RUN dotnet publish -c Release -o out
 FROM microsoft/dotnet:aspnetcore-runtime
 WORKDIR /app
 EXPOSE 5004 5005
+LABEL SERVICE_NAME="test-service"
 ENV ASPNETCORE_URLS=http://+:5005
 COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "service-1.dll"]
