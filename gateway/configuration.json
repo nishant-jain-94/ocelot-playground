@@ -5,6 +5,9 @@
     "DownstreamPathTemplate": "/",
     "UpstreamPathTemplate": "/test/",
     "ServiceName": "test-service",
+    "LoadBalancerOptions": {
+      "Type": "RoundRobin"
+    },
     "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
   }
  ],
