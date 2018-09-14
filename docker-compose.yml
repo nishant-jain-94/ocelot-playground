@@ -13,9 +13,17 @@ services:
     ports:
       - "5004:5004"
       - "5005:5005"
+    labels:
+      - "SERVICE_5005_NAME=test-service"
+      - "SERVICE_5004_NAME=true"
+      - "SERVICE_TAGS=test1,test2"
   service-2:
     build:
       context: ./service-2
     ports:
       - "5002:5002"
       - "5003:5003"
+    labels:
+      - "SERVICE_5003_NAME=test-service"
+      - "SERVICE_5002_NAME=true"
+      - "SERVICE_TAGS=test1,test2"
