@@ -2,7 +2,6 @@
  "ReRoutes": [
   {
     "DownstreamPathTemplate": "/",
-    "DownstreamScheme": "http",
     "UpstreamPathTemplate": "/test/",
     "ServiceName": "test-service",
     "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
