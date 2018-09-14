@@ -1,0 +1,29 @@
+{
+ "ReRoutes": [
+  {
+    "DownstreamPathTemplate": "/",
+    "DownstreamScheme": "http",
+    "DownStreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 5003
+      }
+    ],
+    "UpstreamPathTemplate": "/a/",
+    "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+  },
+  {
+    "DownstreamPathTemplate": "/",
+    "DownstreamScheme": "http",
+    "DownStreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 5005
+      }
+    ],
+    "UpstreamPathTemplate": "/b/",
+    "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Options"]
+  }
+ ],
+ "GlobalConfiguration": {}
+}
