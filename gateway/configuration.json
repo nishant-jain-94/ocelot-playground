@@ -1,6 +1,7 @@
 {
  "ReRoutes": [
   {
+    "DownstreamScheme": "http",
     "DownstreamPathTemplate": "/",
     "UpstreamPathTemplate": "/test/",
     "ServiceName": "test-service",
